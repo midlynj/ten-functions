@@ -1,4 +1,84 @@
 "use strict";
+function isTrue(input) {
+    return input === true;
+} isTrue();
+
+function isFalse(input) {
+    return input === false;
+} isFalse();
+
+function not(input) {
+    if (input === true) {
+        return false;
+    } else {
+        return true;
+    }
+
+}not();
+
+function addOne(input) {
+    if (isNaN (input) == false) {
+        return input + 1
+    }
+} addOne();
+
+function isEven(input) {
+    if (input % 2 === 0) {
+        return true
+    } else if (input === false){
+        return false
+    } else {
+        return false
+    }
+} isEven();
+
+function isIdentical(input1, input2) {
+    if (input1 === input2) {
+        return true
+    } else {
+        return false
+    }
+} isIdentical();
+
+function isEqual(input1, input2) {
+    if (input1 == input2) {
+        return true
+    } else {
+        return false
+    }
+} isEqual();
+
+function or(input1, input2) {
+    if (input1 || input2) {
+        return input1 || input2
+    } else if (input1 == input2) {
+        return false
+    } else {
+
+    }
+} or();
+
+function and(input1, input2) {
+    if (input1 && input2) {
+        return true
+    } else if ( true || false){
+        return false
+    } else if (input1 && input2) {
+        return input2
+    }
+} and();
+
+function concat(input1, input2) {
+    if (input1 && input2) {
+        return input1 + input2
+    } else {
+
+    }
+
+} concat()
+
+
+
 
 /**
  * Write your solutions here.
