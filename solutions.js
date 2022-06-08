@@ -8,24 +8,22 @@ function isFalse(input) {
 } isFalse();
 
 function not(input) {
-    if (input === true) {
-        return false;
-    } else {
-        return true;
-    }
+    return !(input === true || input === 5 || input === "hello" || input === 123);
 
 }not();
 
 function addOne(input) {
-    if (isNaN (input) == false) {
+    if (isNaN (input) == false ) {
+        return input + 1
+    } else if (isNaN(input) == true) {
         return input + 1
     }
 } addOne();
 
 function isEven(input) {
-    if (input % 2 === 0) {
+    if (input % 2 == 0) {
         return true
-    } else if (input === false){
+    } else if (input == false) {
         return false
     } else {
         return false
