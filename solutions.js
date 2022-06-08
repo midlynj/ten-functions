@@ -15,7 +15,7 @@ function not(input) {
 function addOne(input) {
     if (isNaN (input) == false ) {
         return input + 1
-    } else if (isNaN(input) == true) {
+    } else {
         return input + 1
     }
 } addOne();
