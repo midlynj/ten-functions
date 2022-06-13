@@ -4,7 +4,11 @@ function isTrue(input) {
 } isTrue();
 
 function isFalse(input) {
-    return input === false;
+  if (input === false) {
+      return true
+  } else {
+      return false
+  }
 } isFalse();
 
 function not(input) {
@@ -13,21 +17,19 @@ function not(input) {
 }not();
 
 function addOne(input) {
-    if (isNaN (input) == false ) {
-        return input + 1
-    } else {
-        return input + 1
-    }
-} addOne();
+  if (input == input) {
+  return Number(input)+ 1
+  }
+}
 
 function isEven(input) {
-    if (input % 2 == 0) {
-        return true
-    } else if (input == false) {
-        return false
-    } else {
-        return false
-    }
+   if (input % 2 == 0 && typeof input !== "boolean" ) {
+       return true
+   }
+   else {
+       return false
+   }
+
 } isEven();
 
 function isIdentical(input1, input2) {
@@ -57,22 +59,22 @@ function or(input1, input2) {
 } or();
 
 function and(input1, input2) {
-    if (input1 && input2) {
+    if (input1 == true && input2 == true) {
         return true
-    } else if ( true || false){
+    } else if (input1 == true && input2 == false ) {
         return false
     } else if (input1 && input2) {
         return input2
+    }
+    else {
+        return false
     }
 } and();
 
 function concat(input1, input2) {
     if (input1 && input2) {
-        return input1 + input2
-    } else {
-
+        return String(input1) + String(input2)
     }
-
 } concat()
 
 
